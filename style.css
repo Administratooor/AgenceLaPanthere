@@ -96,6 +96,15 @@ a:hover {
   background-size: 280px 280px;
 }
 
+.image-resize-mode {
+  width: 100px;
+  height: 100px;
+}
+.image-resize-mode-2 {
+  width: 252px;
+  height: 51px;
+}
+
 .b-parallax {
   background-attachment: fixed;
 }
