@@ -836,8 +836,8 @@ h4 {
 }
 
 .bg-banniere {
-  background-image: url("img/Compressed/agence-la-panthere.webp")
-    image-set(url("img/Compressed/agence-la-panthere.jpg"));
+  background-image: url("img/Compressed/agence-la-panthere.webp");
+  background-image: image-set(url("Compressed/image-de-presentation.jpg"));
 }
 
 .bg-presentation {
