@@ -90,10 +90,6 @@ a:hover {
   right: 0;
 }
 
-.texture-paper::before {
-  background-image: url("img/Compressed/texture-paper.webp");
-  background-size: 280px 280px;
-}
 
 .image-resize-mode {
   width: 100px;
@@ -146,7 +142,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -296,9 +292,6 @@ a:hover {
   padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-  font-size: 32px;
-}
 
 .navbar {
   margin-bottom: 0;
@@ -666,7 +659,7 @@ label,
 .btn,
 a {
   font-family: "helvetica";
-  color: rgba(0, 0, 0, 0.5) !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .hero-bloc-text {
@@ -689,6 +682,7 @@ a {
 
 p {
   font-size: 19px;
+  font-weight: 300;
 }
 
 .tight-width-whitespace {
@@ -723,7 +717,7 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   color: #333333 !important;
@@ -740,6 +734,7 @@ h1 {
 }
 
 h4 {
+  font-size: 28px;
   color: #333333 !important;
 }
 
@@ -759,7 +754,7 @@ h4 {
   height: 100%;
 }
 
-.portfolio-row {
+picture {
   margin-bottom: 44px;
   margin-top: 50px;
 }
@@ -769,7 +764,7 @@ h4 {
 }
 
 .black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+  background-color: #364577;
   padding: 40px 40px 40px 40px;
 }
 
@@ -782,25 +777,26 @@ h4 {
   background-color: #ffffff;
 }
 
-.bgc-dark-slate-blue {
-  background-color: #364577;
-}
 
 .bgc-atomic-tangerine {
   background-color: #364577;
 }
 
 .tc-white {
-  color: #f3976c !important;
+  color:  #ffffff !important;
 }
-
+.tc-white h3 {
+  color:  #ffffff !important;
+  font-weight: 800;
+}
 .btn-atomic-tangerine {
-  background: #f3976c;
+  border: 2px solid #f3976c;
+  background: #364577;
   color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956 !important;
+  background: #484848 !important;
   color: #ffffff !important;
 }
 
@@ -1002,6 +998,7 @@ h4 {
   .bloc-xl,
   .bloc-lg {
     padding: 40px 0;
+    width: 80%;
   }
   .bloc-sm,
   .bloc-md {
@@ -1054,8 +1051,8 @@ h4 {
     text-align: center;
   }
 }
-@media (min-width: 768px){
-  .col-sm-3{
-    width:5%;
+@media (min-width: 768px) {
+  .col-sm-3 {
+    width: 5%;
   }
 }
