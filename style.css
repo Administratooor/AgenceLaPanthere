@@ -12,6 +12,7 @@ button {
   transition: all 0.3s ease-in-out;
   outline: none !important;
   text-decoration: none;
+  font-size: large;
 }
 
 a:hover {
@@ -24,7 +25,6 @@ a:hover {
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 100000;
   background: #ffffff url("img/pageload-spinner.gif") no-repeat center;
 }
 
@@ -44,6 +44,9 @@ a:hover {
   padding-right: 0;
 }
 
+.row h1 {
+  text-align: center;
+}
 .bloc-lg {
   padding: 100px 50px;
 }
@@ -90,6 +93,10 @@ a:hover {
   right: 0;
 }
 
+.texture-paper::before {
+  background-image: url("img/Compressed/texture-paper.webp");
+  background-size: 280px 280px;
+}
 
 .image-resize-mode {
   width: 100px;
@@ -98,10 +105,6 @@ a:hover {
 .image-resize-mode-2 {
   width: 252px;
   height: 51px;
-}
-
-.special-dropdown-nav {
-  height: 40px;
 }
 
 .b-parallax {
@@ -207,6 +210,19 @@ a:hover {
   color: rgb(0, 0, 0);
 }
 
+.form-group {
+  padding: 5px;
+  font-size: large;
+}
+
+.col-sm-7 {
+  font-size: 18px;
+}
+
+address {
+  font-style: normal;
+}
+
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
   color: rgba(0, 0, 0, 0.7);
@@ -291,7 +307,16 @@ a:hover {
   padding-right: 0;
   padding-left: 0;
 }
-
+.navbar .nav2 {
+  bottom: -20px;
+  right: 25%;
+  display: flex;
+}
+.navbar .nav2 li {
+  bottom: -50px;
+  padding-right: 20px;
+  display: flex;
+}
 
 .navbar {
   margin-bottom: 0;
@@ -300,7 +325,7 @@ a:hover {
 
 .navbar-brand {
   height: auto;
-  padding: 3px 15px;
+  padding: 3px 0px;
   font-size: 25px;
   font-weight: normal;
   font-weight: 600;
@@ -322,17 +347,16 @@ a:hover {
 }
 
 .navbar .nav {
+  padding-top: 2px;
+  margin-right: -16px;
   float: right;
-  display: flex;
-  margin-right: 150px;
+  z-index: 1;
 }
 
 .nav > li {
-  list-style-type: none;
-  padding-right: 15px;
+  float: left;
   margin-top: 4px;
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -370,13 +394,13 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  /* .site-navigation {
+  .site-navigation {
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translate(0, -50%);
     -webkit-transform: translateY(-50%);
-  } */
+  }
   .nav > li .dropdown-menu a,
   .nav > li .dropdown-menu a:hover {
     color: #484848;
@@ -514,8 +538,26 @@ button {
 }
 
 .form-control {
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.441);
   box-shadow: none;
+}
+
+.col-sm-6,
+.col-sm-7,
+textarea {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .col-sm-6,
+  .col-sm-7,
+  textarea {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
 .scrollToTop {
@@ -663,7 +705,7 @@ a {
 }
 
 .hero-bloc-text {
-  font-size: 38px;
+  font-size: 45px;
 }
 
 .hero-bloc-text-sub {
@@ -681,13 +723,13 @@ a {
 }
 
 p {
-  font-size: 19px;
-  font-weight: 300;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .tight-width-whitespace {
   max-width: 600px;
-  margin: auto auto auto auto;
+  margin: auto  auto auto;
 }
 
 .h1 {
@@ -777,16 +819,15 @@ picture {
   background-color: #ffffff;
 }
 
-
 .bgc-atomic-tangerine {
   background-color: #364577;
 }
 
 .tc-white {
-  color:  #ffffff !important;
+  color: #ffffff !important;
 }
 .tc-white h3 {
-  color:  #ffffff !important;
+  color: #ffffff !important;
   font-weight: 800;
 }
 .btn-atomic-tangerine {
@@ -835,6 +876,7 @@ picture {
 
 .bg-banniere {
   background-image: url("img/Compressed/agence-la-panthere.webp");
+  background-color: #364577;
 }
 
 .bg-presentation {
@@ -925,9 +967,11 @@ picture {
     background-attachment: scroll;
   }
   .navbar .nav {
+    display: flex;
     padding-top: 0;
     float: none !important;
   }
+
   .navbar.row {
     display: lock;
     margin-left: 0;
@@ -939,7 +983,7 @@ picture {
     -webkit-transform: none;
     -ms-transform: none;
   }
-  .nav > li,
+  .nav > li, .nav2 > li,
   .navbar-header {
     justify-content: center;
     display: flex;
@@ -974,7 +1018,7 @@ picture {
   .navbar-collapse {
     display: block;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -990,15 +1034,15 @@ picture {
     float: left;
     margin-left: 10px;
   }
-  /* .bloc {
-    padding-left: 0;
-    padding-right: 0;
-  } */
+  .bloc {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .bloc-xxl,
   .bloc-xl,
   .bloc-lg {
     padding: 40px 0;
-    width: 80%;
+    width: 100%;
   }
   .bloc-sm,
   .bloc-md {
@@ -1051,6 +1095,7 @@ picture {
     text-align: center;
   }
 }
+
 @media (min-width: 768px) {
   .col-sm-3 {
     width: 5%;
