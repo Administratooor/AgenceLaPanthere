@@ -6,6 +6,6 @@ CACHE:
 index.html
 favicon.jpg
 style.css
-img/Compressed/agence-la-panthere.webp
-img/Compressed/Conception-site_mariage.webp
-js/bootstrap.js
+/img/Compressed/agence-la-panthere.webp
+/img/Compressed/Conception-site_mariage.webp
+/js/bootstrap.js
