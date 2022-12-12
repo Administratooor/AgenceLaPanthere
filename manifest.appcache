@@ -1,0 +1,8 @@
+CACHE MANIFEST
+#v1
+
+#'Cache master entries'.
+CACHE:
+index.html
+favicon.jpg
+style.css
