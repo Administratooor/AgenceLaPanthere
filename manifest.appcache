@@ -1,12 +1,12 @@
-CACHE MANIFEST
-text/cache-manifest
+#CACHE MANIFEST
+#text/cache-manifest
 #v1
 
 #'Cache master entries'.
-CACHE:
-index.html
-favicon.jpg
-style.css
-/img/Compressed/agence-la-panthere.webp
-/img/Compressed/Conception-site_mariage.webp
-/js/bootstrap.js
+#CACHE:
+#index.html
+#favicon.jpg
+#style.css
+#/img/Compressed/agence-la-panthere.webp
+#/img/Compressed/Conception-site_mariage.webp
+#/js/bootstrap.js
